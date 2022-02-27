@@ -1,0 +1,110 @@
+@charset "UTF-8";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lateef&display=swap');
+
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Shadows Into Light', cursive;
+    --fonte3: 'Lateef', cursive;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em;
+}
+
+html, body{
+    min-height: 100vh;
+    background-color: rgb(61, 145, 82);
+    font-family: var(--fonte1);
+}
+
+header{
+    background-image: linear-gradient(to right, rgb(61, 153, 141), rgb(12, 39, 71) );
+    color: white;
+    text-align: center;
+}
+
+header > h1{
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-family: var(--fonte2);
+    font-size: 8vw;
+}
+
+header > p{
+    padding-bottom: 50px;
+}
+
+header a, footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+
+ header a:hover, footer a:hover{
+    text-decoration: underline;
+    color: rgb(37, 145, 15);
+}
+
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: var(--fonte3);
+    font-size: 3.2vw;
+}
+
+section > p {
+    padding-bottom: 2em;
+}
+
+.normal{
+    background-color: rgba(186, 190, 189, 0.692);
+    color: black;
+}
+
+.imagem{
+    background-color: rgb(51, 95, 62);
+    color: rgb(207, 211, 210);
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.470);
+    background-attachment: fixed;
+}
+
+section#img01{
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center;
+    background-size: cover;
+}
+
+section#img02{
+    background-image: url('../imagens/background002.jpg');
+    background-position: right center;
+    background-size: cover;
+}
+
+
+.imagem > p{
+    display: inline-block;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.514);
+    border-radius: 3px;
+    text-shadow: 1px 1px 0px black;
+}
+
+footer{
+    background-color: rgb(1, 28, 29);
+    color: rgb(206, 198, 198);
+    text-align: center;
+    padding: 6px;
+    font-size: 17px;
+    font-family: var(--fonte2);
+    text-shadow: none;
+    box-shadow: none;
+}
